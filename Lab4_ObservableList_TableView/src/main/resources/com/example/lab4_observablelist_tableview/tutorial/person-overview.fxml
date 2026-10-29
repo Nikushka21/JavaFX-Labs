@@ -1,0 +1,32 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lab4_observablelist_tableview.tutorial.PersonOverviewController"
+            prefWidth="650.0" prefHeight="400.0">
+
+    <top>
+        <VBox spacing="8.0" style="-fx-padding: 18;">
+            <Label text="Учебный пример Code.Makery"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Label text="Обзор людей"/>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="personTable">
+            <columns>
+                <TableColumn fx:id="firstNameColumn"
+                             text="Имя"
+                             prefWidth="280.0"/>
+                <TableColumn fx:id="lastNameColumn"
+                             text="Фамилия"
+                             prefWidth="320.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

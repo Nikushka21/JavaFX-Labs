@@ -1,0 +1,52 @@
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.lab4_observablelist_tableview.studentvariant.StudentVariantController"
+            prefWidth="1000.0" prefHeight="550.0">
+
+    <top>
+        <VBox spacing="12.0" style="-fx-padding: 20;">
+            <Label text="Индивидуальный вариант 2 — Студенческая группа и студент"
+                   style="-fx-font-size: 21px; -fx-font-weight: bold;"/>
+
+            <HBox spacing="30.0">
+                <Label fx:id="groupNameLabel"
+                       style="-fx-font-size: 15px;"/>
+                <Label fx:id="facultyLabel"
+                       style="-fx-font-size: 15px;"/>
+                <Label fx:id="courseLabel"
+                       style="-fx-font-size: 15px;"/>
+            </HBox>
+
+            <Label text="Список студентов"
+                   style="-fx-font-size: 17px; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="studentTable"
+                   style="-fx-font-size: 14px;">
+            <columns>
+                <TableColumn fx:id="lastNameColumn"
+                             text="Фамилия"
+                             prefWidth="180.0"/>
+                <TableColumn fx:id="firstNameColumn"
+                             text="Имя"
+                             prefWidth="180.0"/>
+                <TableColumn fx:id="middleNameColumn"
+                             text="Отчество"
+                             prefWidth="220.0"/>
+                <TableColumn fx:id="specialtyColumn"
+                             text="Специальность"
+                             prefWidth="400.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
